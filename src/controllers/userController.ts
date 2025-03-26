@@ -5,9 +5,17 @@ import { User } from "../entities/User";
 // Create a new user
 export const createUser = async (req: Request, res: Response) => {
     try {
-        res.status(201).json({ message: "User created successfully!" });
-    } catch (error) {
-        res.status(500).json({ error: "Something went wrong!" });
+        const { name, email, password } = req.body;
+
+        const user = new User();
+        user.name = name;
+        user.email = email;
+        user.password = password;
+
+        const savedUser = await AppDataSource.getRepository(User).save(user);
+        res.status(201).json({ message: "User created successfully!", user: savedUser });
+    } catch (error: any) {
+        res.status(500).json({ error: "Something went wrong!", details: error.message });
     }
 };
 
