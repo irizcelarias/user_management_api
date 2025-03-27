@@ -50,9 +50,58 @@ It provides endpoints for managing user data, including user registration, retri
 - **API Documentation**
   POSTMAN URL: http://localhost:3000/api/users
   ```
-  POST:  ![POST](https://github.com/user-attachments/assets/9f0fb884-b785-4e00-8db9-2754da62ffd9)
-  GET:  ![GET](https://github.com/user-attachments/assets/bb28be82-6518-40ef-8947-22ceeabcd4ec)
-  DELETE: ![DELETE](https://github.com/user-attachments/assets/df7532b7-0282-44ff-a515-640a10fd7a53)
+  POST:
+
+    Request Body:
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "password123"
+}
+Response:
+  { 
+    "message": "User created successfully!"
+  }
+
+  
+  Request Body:
+{
+  "name": "Zaira Mier",
+  "email": "zairamier@example.com",
+  "password": "123456"
+}
+Response:
+  { 
+    "message": "User created successfully!"
+  }
+
+
+  GET ALL USERS: 
+  Response:
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "email": "john@example.com",
+    "password": "password123"
+  }
+]
+  Response:
+[
+  {
+    "id": 2,
+    "name": "Zaira Mier",
+    "email": "zairamier@example.com",
+    "password": "123456"
+  }
+] 
+
+
+  DELETE:  
+  Response:
+{
+  "message": "User deleted successfully"
+}
 
 
 
