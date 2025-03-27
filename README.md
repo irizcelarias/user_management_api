@@ -14,7 +14,7 @@ It provides endpoints for managing user data, including user registration, retri
   npx tsc --init
   
 - **Configure the Database**
-  import { DataSource } from "typeorm";
+  ```import { DataSource } from "typeorm";
   import { User } from "../entities/User";
   
   export const AppDataSource = new DataSource({
@@ -36,7 +36,7 @@ It provides endpoints for managing user data, including user registration, retri
     .catch((error) => console.log(error));
 
 - **Testing**
-  $ npm run dev
+  ```$ npm run dev
   
   > user_management_api@1.0.0 dev
   > ts-node-dev --respawn --transpile-only src/app.ts
