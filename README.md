@@ -1,7 +1,7 @@
 # USER MANAGEMENT API
 # PROJECT OVERVIEW
 The User Management API is designed to handle CRUD (Create, Read, Update, Delete) operations for user accounts in a system. 
-It provides endpoints for managing user data, including user registration, retrieving user details, updating user information, and deleting accounts.
+It provides endpoints for managing user data, including user registration, retrieving user details, and deleting accounts.
 # SETUP INSTRUCTIONS
 - **Cloninng our repository** - git clone https://github.com/irizcelarias/user_management_api.git
   
@@ -51,6 +51,9 @@ It provides endpoints for managing user data, including user registration, retri
   POSTMAN URL: http://localhost:3000/api/users
   ```
   POST:
+  URL: POST/users
+  
+   GET /users/:id
 
     Request Body:
  ```
@@ -77,7 +80,9 @@ Response:
   }
 
 
-  GET ALL USERS: 
+  GET ALL USERS:
+  URL: GET/users
+
   Response:
 [
   {
@@ -98,18 +103,25 @@ Response:
 ] 
 
 
-  DELETE:  
+  GET USERS BY ID:
+  URL: GET /users/:id
+
+  Response:
+[
+  {
+    "id": 2,
+    "name": "Zaira Mier",
+    "email": "zairamier@example.com",
+    "password": "123456"
+  }
+] 
+
+
+
+  DELETE:
+  URL: DELETE/users
+  
   Response:
 {
   "message": "User deleted successfully"
 }
-
-
-
-  
-  
- 
-  
-  
-
-
