@@ -87,8 +87,8 @@ Response:
 [
   {
     "id": 1,
-    "name": "John Doe",
-    "email": "john@example.com",
+    "name": "Hamela Sala",
+    "email": "salahamela@example.com",
     "password": "password123"
   }
 ]
@@ -115,7 +115,6 @@ Response:
     "password": "123456"
   }
 ] 
-
 
 
   DELETE:
