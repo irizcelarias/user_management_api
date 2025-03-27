@@ -13,7 +13,7 @@ It provides endpoints for managing user data, including user registration, retri
   npm install mysql2
   npx tsc --init
   
--**Configure the Database**
+- **Configure the Database**
   import { DataSource } from "typeorm";
   import { User } from "../entities/User";
   
