@@ -53,6 +53,7 @@ It provides endpoints for managing user data, including user registration, retri
   POST:
 
     Request Body:
+ ```
 {
   "name": "John Doe",
   "email": "john@example.com",
