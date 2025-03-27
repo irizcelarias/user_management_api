@@ -3,8 +3,7 @@
 The User Management API is designed to handle CRUD (Create, Read, Update, Delete) operations for user accounts in a system. 
 It provides endpoints for managing user data, including user registration, retrieving user details, updating user information, and deleting accounts.
 # SETUP INSTRUCTIONS
-- **Cloninng our repository**
-  ```git clone https://github.com/irizcelarias/user_management_api.git
+- **Cloninng our repository** - git clone https://github.com/irizcelarias/user_management_api.git
   
 - **Install Dependencies**
   ```npm install 
