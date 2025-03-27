@@ -49,6 +49,13 @@ It provides endpoints for managing user data, including user registration, retri
   
 - **API Documentation**
   POSTMAN URL: http://localhost:3000/api/users
+  ```POST: ![image](https://github.com/user-attachments/assets/af5a4b15-abc9-421b-bf04-f30bf75738d1)
+  GET: ![image](https://github.com/user-attachments/assets/fa483387-7ec7-4db3-bba0-2761aefa412c)
+  DELETE: ![image](https://github.com/user-attachments/assets/fa1e7ed8-2af2-4323-b5fa-1e45ae12dce9)
+
+
+  
+  
  
   
   
